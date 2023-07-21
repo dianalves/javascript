@@ -16,9 +16,9 @@
         function calcular() {
             var txtn = window.document.getElementById('txtnac')
             var res = window.document.getElementById('res')
-            res.innerHTML = `<p>Seu país de origem é ${txtn}</p>`
-            console.log(txtn)
-            if (txtn == 'Brasil') {
+            var nac = txtn.value
+            res.innerHTML = `<p>Seu país de origem é ${nac}</p>`
+            if (nac == 'Brasil') {
                 res.innerHTML += `<p>Você é brasileiro, Seja Bem Vindo de volta!</p>`
             } else {
                 res.innerHTML += `<p>Você é estrangeiro, Seja Bem Vindo ao Brasil!</p>`
