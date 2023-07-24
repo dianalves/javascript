@@ -13,14 +13,23 @@
 
     <section>
         <div>
-            <format>
+            <form>
                 <p>
-                
+                    <label for="iinicio">Início: </label>
+                    <input type="number" name="inicio" id="iinicio">
                 </p>
                 <p>
-                    <input type="button" value="Contar" onclick="verificar()">
+                    <label for="ifim">Fim: </label>
+                    <input type="number" name="fim" id="ifim">
                 </p>
-            </format>
+                <p>
+                    <label for="ipasso">Passo: </label>
+                    <input type="number" name="passo" id="ipasso">
+                </p>
+                <p>
+                    <input type="button" value="Contar" onclick="calcular()">
+                </p>
+            </form>
         </div>
         <div id="res">
             Preparando a contagem...
